@@ -8,7 +8,7 @@ $ sudo apt-get install git
 ```
 source download
 ```
-$ git clone https://github.com/nerdyfactory/happywell-web.git
+$ git clone https://github.com/linesystem/happywell-web.git
 ```
 install script 실행
 ```
