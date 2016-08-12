@@ -14,11 +14,13 @@ command="chmod $PERM /etc/sudoers.d/$current_user"
 sudo sh -c "$command"
 
 #setting node env
-command "export NODE_ENV=production > ~/.bashrc"
+command="echo \"export NODE_ENV=production\" > ~/.bashrc"
+sh -c "$command"
 
 #copy users.json
 mkdir data
-cp ./template/users.json data
+cp ./scripts/template/users.json data
+sudo chown root:root data/users.json
 
 #install node packages
 sudo npm install -g gulp-cli
@@ -34,3 +36,5 @@ sudo pm2 logrotate
 
 #upstart scripts
 sudo pm2 startup
+
+npm restart
