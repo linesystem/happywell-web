@@ -1,0 +1,285 @@
+
+/*************************
+ * layout
+ ************************/
+.footer .btn {
+  margin: 14px;
+}
+
+.modal-dialog li {
+  margin: 10px;
+}
+
+.modal-dialog .summit{
+  text-align: right;
+  margin: 10px;
+}
+
+.row {
+  margin-bottom: 5px;
+}
+
+/*************************
+ * rooms
+ ************************/
+
+.rooms .room-index {
+  min-height: 100%;
+}
+
+.bulb {
+  text-align: center;
+  font-size: 0.6em;
+  padding: 1px;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+  margin: 1px;
+  display: inline-block;
+}
+
+.rooms .row [class*="col-"] {
+  padding: 0.2rem;
+}
+
+.rooms .row .row-10 .roombox {
+  min-height: 8rem;
+}
+.rooms .row .row-10 {
+  font-size: 10px;
+}
+
+.rooms .row .row-7 .roombox {
+  min-height: 11rem;
+}
+.rooms .row .row-7 {
+  font-size: 15px;
+}
+
+.rooms .row .row-5 .roombox {
+  min-height: 17rem;
+}
+.rooms .row .row-5 {
+  font-size: 18px;
+}
+
+.rooms .row .row-3 .roombox {
+  min-height: 28rem;
+}
+.rooms .row .row-3 {
+  font-size: 22px;
+}
+
+.rooms .row .row-1 .roombox {
+  min-height: 70rem;
+}
+.rooms .row .row-1 {
+  font-size: 22px;
+}
+
+.rooms .roombox h4 {
+  font-weight: bold;
+  margin: 0.2em;
+  font-size: 1.1em;
+  line-height: 1.1em;
+}
+
+.rooms .roombox h6 {
+  margin: 0.2em;
+  font-size: 0.9em;
+  line-height: 0.9em;
+}
+
+.rooms .roombox {
+  padding: 5px 5px 5px 5px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  width: 100%;
+  height: auto;
+  font-size: 1em;
+  overflow: auto;
+}
+
+.rooms .roombox.empty {
+  border: 1px dashed #e5e5e5;
+  border-radius: 0px;
+}
+
+.rooms .header {
+  overflow: hidden;
+}
+
+.rooms .header button,h4 {
+  margin: 5px 5px 5px 5px;
+}
+
+.rooms button {
+  margin: 5px 5px 5px 5px;
+}
+
+.light-modal .modal-title {
+  font-weight: bold;
+}
+
+.light-modal .bulb p {
+  margin: 0px;
+}
+
+/*************************
+ * devices
+ ************************/
+.devices .header {
+  overflow: hidden;
+}
+.devices button {
+  margin: 30px 10px 15px 10px;
+}
+
+/*************************
+ * setting
+ ************************/
+.room-list .add-room-row {
+  text-align: center;
+}
+
+.room-setting .header {
+  overflow: hidden;
+}
+
+.room-setting .header .title {
+  float: left;
+}
+
+.room-setting .header .buttons {
+  float: right;
+  display: inline-block;
+}
+
+.room-setting .header .buttons button {
+  margin: 30px 10px 15px 10px;
+}
+
+.room-setting table {
+  margin-bottom: 0px;
+}
+
+.room-list table tbody td {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.room-list input[type="text"] {
+  padding: 5;
+  height: initial;
+  width: 100%; 
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*************************
+ * status
+ ************************/
+.circle {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+}
+
+.red {
+  background: #CC3333;
+}
+
+.green {
+  background: #33CC00;
+}
+
+
+/*************************
+ * log
+ ************************/
+.log .navbar {
+  padding-left: 30px;
+  margin: 0px;
+}
+.log .content {
+  margin: 0px;
+  margin-top: 50px;
+  padding: 30px 15px;
+  min-height: calc(100% - 50px);
+  background: #f7f7f8;
+}
+
+.log .content .card {
+  padding-left: 10px;
+  overflow: auto;
+}
+
+.log .log-line {
+  font-size: 14px;
+  min-height: 42px;
+  max-height: 42px;
+  line-height: 14px;
+  font-size: 14px;
+  margin: 0px;
+  overflow: auto;
+}
+
+/*************************
+ * login
+ ************************/
+.signin {
+  background: #f7f7f8;
+  text-align: center;
+  height: 100%;
+}
+
+.signin .form {
+  width: 400px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFFFFF;
+}
+
+.signin .form .input {
+  text-align: left;
+  margin: 10px;
+}
+.signin .message {
+  color: red;
+  margin-top: 10px;
+}
+
+
+/*************************
+ * medium size device
+ ************************/
+@media (max-width: 991px) {
+  body {
+    font-size: 12px;
+  }
+
+  .sidebar {
+    width: 130px;
+  }
+  .sidebar .sidebar-wrapper {
+    width: 130px;
+  }
+  .main-panel {
+    width: calc(100% - 130px);
+  }
+}
+
+/*************************
+ * small size device
+ ************************/
+@media (max-width: 750px) {
+  body {
+    font-size: 10px;
+  }
+}
